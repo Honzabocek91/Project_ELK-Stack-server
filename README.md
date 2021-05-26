@@ -201,7 +201,7 @@ _As a  **Bonus**, provide the specific commands the user will need to run to dow
  - To run the Playbook: ansible-playbook /etc/ansible/elk.yml
 
  - Check your installation is working by visiting in a browser: http://[your_elk_server_ip]:5601/app/kibana
-![enter image description here](Diagrams/Screen%20Shot%202021-05-26%20at%2012.43.09.png)
+![enter image description here](Diagrams/Kibana%20Home.png)
 
  Installing Filebeat:
 
@@ -211,7 +211,7 @@ _As a  **Bonus**, provide the specific commands the user will need to run to dow
  - Run the playbook with: ansible-playbook /etc/ansible/filebeat-playbook.yml
  
  You should begin seeing information such as the following:
- ![enter image description here](Diagrams/Screen%20Shot%202021-05-26%20at%2013.47.19.png)
+ ![enter image description here](Diagrams/Filebeat.png)
 
 Installing Metricbeat:
 
@@ -221,4 +221,4 @@ Installing Metricbeat:
  - Run the playbook with: ansible-playbook /etc/ansible/metricbeat_playbook.yml
  
  You should begin seeing information such as the following:
- ![enter image description here](Diagrams/Screen%20Shot%202021-05-26%20at%2013.45.14.png)
+ ![enter image description here](Diagrams/Metricbeat.png)
