@@ -8,12 +8,19 @@ These files have been tested and used to generate a live ELK deployment on Azure
 Alternatively, select portions of the ansible playbook and config file may be used to install only certain pieces of it, such as Filebeat.
 
 [Ansible/hosts.txt](Ansible/Ansible:hosts.txt)
+
 [Ansible/dvwa_playbook.yml](Ansible/Ansible:dvwa_playbook.yml)
+
 [Ansible/ansible_config.txt](Ansible/Ansible:ansible_config.txt)
+
 [Ansible/elk.yml](Ansible/Ansible:elk.yml)
+
 [Ansible/filebeat-playbook.yml](Ansible/Ansible:filebeat-playbook.yml)
+
 [Ansible/filebeat_config.txt](Ansible/Ansible:filebeat_config.txt)
+
 [Ansible/metricbeat_playbook.yml](Ansible/Ansible:metricbeat_playbook.yml)
+
 [Ansible/metricbeat_config.txt](Ansible/Ansible:metricbeat_config.txt)
 
 This document contains the following details:
@@ -74,12 +81,12 @@ Machines within the network can only be accessed by Jump Box virtual machine.
 A summary of the access policies in place can be found in the table below.
 
 |Name|Publicly Accessible|Allowed IP Addresses|  
-|-------|----------|------|----------|  
-|Jump Box|Yes / SSH-22|119.18.22.67| 
-|Web 1|No|WEB LB 121.44.99.203, 10.0.1.11| 
-|Web 2|No|WEB LB 121.44.99.203, 10.0.1.11|  
-|Web 3|No|WEB LB 121.44.99.203, 10.0.1.11|  
-|ELK-VM|Yes / TCP 5601/9200|10.0.1.11, 10.0.1.12/13/14|
+|-------|-------------|---------------|
+|Jump Box|Yes / SSH-22|119.18.22.67|     
+|Web 1|No|WEB LB 121.44.99.203,10.0.1.11|  
+|Web 2|No|WEB LB 121.44.99.203,10.0.1.11|  
+|Web 3|No|WEB LB 121.44.99.203,10.0.1.11|  
+|ELK-VM|Yes / TCP 5601/9200|10.1.0.5, 10.0.1.12/13/14|
 |Load Balancer|Yes (HTTP 80)|(Personal IP) 121.44.99.203|
 
 Elk Configuration
