@@ -227,14 +227,14 @@ A summary of the access policies in place can be found in the table below.
 
   
 
-Name|Publicly Accessible|Allowed IP Addresses  
-|-------|----------|------|----------|  
+Name|Publicly Accessible|Allowed IP Addresses|  
+|-------|----------|------|  
 |Jump Box|Yes / SSH-22|119.18.22.67|  
 |Web 1|No|WEB LB 121.44.99.203,10.0.1.11|  
 |Web 2|No|WEB LB 121.44.99.203,10.0.1.11|  
 |Web 3|No|WEB LB 121.44.99.203,10.0.1.11|  
 |ELK-VM|Yes / TCP 5601/9200|10.1.0.5, 10.0.1.12/13/14|
-|Load Balancer|Yes / HTTP 80|(Personal IP) 121.44.99.203|
+|Load Balancer|Yes / HTTP 80|[Personal IP] 121.44.99.203|
 
   
 
