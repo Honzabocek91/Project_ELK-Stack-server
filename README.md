@@ -372,39 +372,15 @@ SSH into the control node and follow the steps below
 
 - Update the filebeat-config.yml file to include
 
-  
-
-  
-
->
-
-  
-
+```
 output.elasticsearch:
+ hosts: ["10.1.0.5:9200"]
+ username: "elastic"
+ password: "changeme"              
 
-  
-
-hosts: ["10.1.0.5:9200"]
-
-  
-
-username: "elastic"
-
-  
-
-password: "changeme"
-
-  
-
-setup.kibana:
-
-  
-
-host: "10.1.0.5:5601"
-
-  
-
-  
+ setup.kibana: 
+ host: "10.1.0.5:5601"
+```
 
 - Save this file in /etc/ansible/files/filebeat-config.yml.
 
@@ -459,37 +435,13 @@ How do I specify which machine to install the ELK server on versus which to inst
   
 
 ```
-
-  
-
 [webservers]
-
-  
-
 10.0.0.12 ansible_python_interpreter=/usr/bin/python3
-
-  
-
 10.0.0.13 ansible_python_interpreter=/usr/bin/python3
-
-  
-
 10.0.0.14 ansible_python_interpreter=/usr/bin/python3
 
-  
-
-  
-
 [elk]
-
-  
-
 10.1.0.5 ansible_python_interpreter=/usr/bin/python3
-
-  
-
-  
-
 ```
 
   
@@ -501,25 +453,10 @@ How do I specify which machine to install the ELK server on versus which to inst
   
 
 ```
-
-  
-
 name: installing and launching metricbeat
-
-  
-
 hosts: webservers
-
-  
-
 become: yes
-
-  
-
 tasks:
-
-  
-
 ```
 
   
@@ -563,16 +500,15 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 - #/etc/ansible/nano hosts
 
   
-
-`[elk]
-
-  
-
+```
+[elk]
 10.1.0.5 ansible_python_interpreter=/usr/bin/python3
+```
+
 
   
 
-`
+
 
   
 
